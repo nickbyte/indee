@@ -1,0 +1,149 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,700);
+body {
+  background: #e2eae5;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background: #1783fc;
+  color: #fff;
+}
+
+header h1.logo {
+  margin: 5px auto;
+  font-weight: 400;
+}
+
+header h1.logo span {
+  width: 38px;
+  height: 38px;
+  background: url("../images/logo.png") no-repeat;
+  display: inline-block;
+  background-size: 100%;
+  margin: -5px 0;
+}
+
+.top-menu {
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+.top-menu li {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.top-menu li a {
+  padding: 15px 12px;
+  margin: 0 -2px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.top-menu li a:hover {
+  background: #014a71;
+}
+
+.intro-wrapper {
+  height: 380px;
+  background: url("../images/bg.jpg") bottom no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+.intro-wrapper h2 {
+  font-weight: 100;
+  font-size: 38px;
+  margin: 6% auto auto auto;
+}
+
+.intro-wrapper p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 28px;
+  margin: 10px auto;
+}
+
+.intro-wrapper .btn {
+  width: 100%;
+  max-width: 300px;
+  font-size: 16px;
+  padding: 10px;
+  background: #74eb14;
+  border-color: #74eb14;
+  margin-top: 100px;
+}
+
+.list-wrapper {
+  margin: 15px auto;
+}
+
+.cards {
+  background: #fff;
+  padding: 8px;
+  margin: 8px auto;
+  border-radius: 5px;
+}
+
+.cards .card-head {
+  padding: 10px 5px;
+  background: none;
+}
+
+.cards .card-head h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.cards .card-head h3 span {
+  display: block;
+  line-height: 28px;
+  font-size: 13px;
+  color: #b8b8b8;
+}
+
+.cards .map {
+  margin: 5px auto;
+  border-radius: 5px;
+  width: 100%;
+  height: 120px;
+  background: gray;
+}
+
+.cards .engagement {
+  width: 100%;
+  padding: 5px;
+}
+
+.cards .engagement h4 {
+  font-size: 16px;
+}
+
+.cards .card-foot {
+  padding: 5px;
+}
+
+.cards .card-foot p {
+  margin: auto;
+  margin-top: 40px;
+}
+
+footer {
+  text-align: center;
+}
+
+.charts div {
+  width: 10px;
+  display: inline-block;
+}
+
+#map-me {
+  height: 125px !important;
+  margin: auto -8px;
+}

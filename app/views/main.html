@@ -1,0 +1,39 @@
+<div class="intro-wrapper">
+<div class="container">
+<div class="col-md-12">
+<h2>Pirate-proof your movies!</h2>
+<p>Market your film. Dont leak it.</p>
+<a href="#" class="btn btn-primary btn-large">Get Started</a>
+</div>
+ </div>
+ </div>   
+<div class="list-wrapper">
+    <div class="container" >
+    <div class="col-md-4" ng-repeat="(key, value) in ipList"> 
+           <div class="cards">
+
+        <div class="card-head">
+             <h3>{{key}} <span>
+              <location data="{{key}}"></location>
+             </span></h3>
+        </div>
+      
+       <div class="map">
+       <showMap data="{{key}}"></showMap>
+       </div>
+        <div class="engagement">
+        <h4>Engagement</h4>
+     
+         <bars-chart chart-data="myData"></bars-chart>
+         <div></div>
+       </div>
+          <div class="card-foot">
+              <p> {{value[0].timestamp}}</p>
+          </div>
+        </div>
+      
+           
+        </div>
+ 
+    </div>  
+</div>
