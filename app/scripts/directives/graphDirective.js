@@ -12,34 +12,55 @@ angular.module('nickApp').directive('barsChart', function($parse) {
         },
         transclude: true,
         link: function(scope, element, attrs) {
-            var getLength = function(value) {
-                var total_length = 0
-                angular.forEach(scope.ipList, function(value, key) {
-                    angular.forEach(value, function(key, index, val) {
-                        var fullLength = parseInt(key['full_length'])
-                        if (parseInt(key['full_length']) > 0) {
-                            total_length = fullLength
-                            return
-                        }
-                    });
-                }, scope.refinedList);
-                return total_length
-            }
-            var video_length = getLength(scope.ipList);
-            var toPercent = d3.scale.linear()
-            toPercent.domain([0, video_length])
-            toPercent.range([0, 320]);
             var chart = d3.select(element[0]);
-            chart.append("div").attr("class", "chart")
-                .selectAll('div')
-                .data(dataset).enter().append("div")
+            chart.append("svg").attr("class", "chart").attr("height", "40px")
+                .selectAll('rect')
+                .data(dataset).enter().append("rect")
                 .transition().ease("elastic")
-                .style("width", "1px")
-                .style("height", "40px")
-                .style("float", "left")
-                .style("display", "inline-block")
-                .style("background", "green");
-        }
+                .attr("width", "1px")
+                .attr("fill", "gray")
+                .attr("height", "40px")
+                .attr("x", function(i) {
+                    return i + 2;
+                })
+                .attr("fill", function(d) {
+                    var chartData = scope.data;
+                    var toPercent = d3.scale.linear();
+                   if(scope.data[0].seek) {
+                 var startSeek = parseInt(scope.data[0].seek[0][0]);
+                 var endSeek = parseInt(scope.data[0].seek[0][1]);
+                   if(d > startSeek && d < endSeek) {
+                    return "gray";
+                   }
+                   }
+                    if (scope.data[0].full_view) {
+                        return "#53A93F";
+                    } else {
+                      var onTime = parseInt(scope.data[0].ontime);
+            
+                      //  console.log(chartData.ontime);
+                        if (d > 0 && d <= onTime) {
+                            return "#53A93F"
+                        } else {
+
+                            return "gray";
+                        }
+                    }
+
+                    // if (d > 18 && d < 20) {
+                    //     return "green"
+                    // }
+                    // if (d > 10 && d < 50) {
+                    //     return "gray";
+                    // }
+
+
+
+                    // return gray
+
+                })
+
+        },
 
     };
     return graph;

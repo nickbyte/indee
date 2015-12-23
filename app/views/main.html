@@ -3,7 +3,7 @@
 <div class="col-md-12">
 <h2>Pirate-proof your movies!</h2>
 <p>Market your film. Dont leak it.</p>
-<a href="#" class="btn btn-primary btn-large">Get Started</a>
+<a ng-click="triggerModal()" class="btn btn-primary btn-large">Get Started</a>
 </div>
  </div>
  </div>   
@@ -24,11 +24,11 @@
         <div class="engagement">
         <h4>Engagement</h4>
      
-         <bars-chart chart-data="myData"></bars-chart>
+         <bars-chart chart-data="value"></bars-chart>
          <div></div>
        </div>
           <div class="card-foot">
-              <p> {{value[0].timestamp}}</p>
+         <showdate data="{{value[0].timestamp}}"></showdate>
           </div>
         </div>
       
@@ -37,3 +37,26 @@
  
     </div>  
 </div>
+<div class="modal" style="display:block;" tabindex="-1" role="dialog" ng-show="ismodalTriggered">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" ng-click="closeModal()" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Add Json</h4>
+      </div>
+      <div class="modal-body">
+       <form class="form">
+     <div class="form-group">
+    <label for="json">JSON</label>
+    <textarea name="json"  class="form-control" placeholder="add JSON here" cols="30" rows="10" ng-model="json"></textarea>
+  </div>
+      </div>
+      <div class="modal-footer">
+       <div class="form-group">
+<button class="btn btn-primary" ng-click="updateList(json)">Add Json</button>
+  </div>
+      </div>
+        </form>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

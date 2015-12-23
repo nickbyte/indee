@@ -7,10 +7,9 @@ angular.module('nickApp').directive('location', function($parse, $http) {
         },
         transclude: true,
         link: function(scope, element, attrs) {
-         console.log(attrs.data, 'attrs');
+        // console.log(attrs.data, 'attrs');
        var queryURL = 'http://freegeoip.net/json/'+attrs.data+''
         $http.get(queryURL).then(function(response){
-         //console.log(response.data.country_name);
         scope.locationData = response.data;
         });
         },
