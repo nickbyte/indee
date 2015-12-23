@@ -1,4 +1,4 @@
-# nick
+# indee
 
 Step 1: Clone this project
 Step 2: npm install
