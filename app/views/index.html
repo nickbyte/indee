@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
@@ -10,56 +11,38 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="bower_components/nvd3/build/nv.d3.css" />
+    <link rel="stylesheet" href="bower_components/jquery-timepicker-jt/jquery.timepicker.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-  <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-  </head>
-  <body ng-app="nickApp">
-<header>
-<div class="container">
-    <div class="col-md-4">
-        <h1 class="logo"><span></span> Indee.</h1>
+</head>
+
+<body ng-app="nickApp">
+    <header>
+        <div class="container">
+            <div class="col-md-4">
+                <h1 class="logo"><span></span> Indee.</h1>
+            </div>
+            <div class="col-md-6">
+                <ul class="top-menu">
+                    <li><a href="/#">Home</a></li>
+                    <li><a href="/#">About</a></li>
+                    <li><a href="/#">Menu</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div ng-view=""></div>
     </div>
-     <div class="col-md-6">
-         <ul class="top-menu">
-             <li><a href="#">Home</a></li>
-             <li><a href="#">About</a></li>
-             <li><a href="#">Menu</a></li>
-         </ul>
-     </div>
-</div>    
-</header>
-
-
-<div class="content">
-  <div ng-view=""></div>
-</div>
-
-
-
-     <footer>
-     <hr>
-     <div class="col-md-12">
-          <p>&copy; 2015 Indee.</p>  
-     </div>
-     
-      </footer>
-
-
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
-
+    <footer>
+        <hr>
+        <div class="col-md-12">
+            <p>&copy; 2015 Indee.</p>
+        </div>
+    </footer>  
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -74,11 +57,19 @@
     <script src="bower_components/d3/d3.js"></script>
     <script src="bower_components/nvd3/build/nv.d3.js"></script>
     <script src="bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
+    <script src="bower_components/jquery-timepicker-jt/jquery.timepicker.js"></script>
+    <script src="bower_components/angular-jquery-timepicker/src/timepickerdirective.js"></script>
+    <script src="bower_components/ngstorage/ngStorage.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/directives/graphDirective.js"></script>
+    <script type="text/javascript" src="scripts/directives/cityDirective.js"></script>
+    <script type="text/javascript" src="scripts/directives/mapDirective.js"></script>
+    <script type="text/javascript" src="scripts/directives/datetimeDirective.js"></script>
     <!-- endbuild -->
 </body>
+
 </html>

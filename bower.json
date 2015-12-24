@@ -11,7 +11,9 @@
     "angular-sanitize": "^1.4.0",
     "angular-touch": "^1.4.0",
     "angular-nvd3": "~1.0.5",
-    "d3": "~3.5.12"
+    "d3": "~3.5.12",
+    "angular-jquery-timepicker": "~0.9.1",
+    "ngstorage": "~0.3.10"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0"

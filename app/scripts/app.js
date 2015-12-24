@@ -13,9 +13,10 @@ angular
     'ngCookies',
     'ngResource',
     'ngRoute',
-    'ngSanitize',
     'ngTouch',
-    'ngMap'
+    'ngMap',
+    'ngStorage',
+    'ui.timepicker'
   ])
   .config(function ($routeProvider) {
     $routeProvider
