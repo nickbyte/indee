@@ -1,0 +1,2063 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>allenhwkim/angularjs-google-maps · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="allenhwkim/angularjs-google-maps" name="twitter:title" /><meta content="angularjs-google-maps - The Simplest AngularJS Google Maps V3 Directive " name="twitter:description" /><meta content="https://avatars0.githubusercontent.com/u/1437734?v=3&amp;s=400" name="twitter:image:src" />
+      <meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars0.githubusercontent.com/u/1437734?v=3&amp;s=400" property="og:image" /><meta content="allenhwkim/angularjs-google-maps" property="og:title" /><meta content="https://github.com/allenhwkim/angularjs-google-maps" property="og:url" /><meta content="angularjs-google-maps - The Simplest AngularJS Google Maps V3 Directive " property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="6A331FEA:35CD:2A395830:567C9809" name="octolytics-dimension-request_id" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;" data-pjax-transient="true" name="analytics-location" />
+<meta content="Rails, view, files#disambiguate" data-pjax-transient="true" name="analytics-event" />
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+        <meta name="expected-hostname" content="github.com">
+
+      <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <meta content="77607d76c22caf44733d90d317cb7a4bd2b9fdfa" name="form-nonce" />
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-30a3e5f6d8007107fb2777570c5b0b6d913bff10fb6e2a3517c864e9a51848b2.css" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2-87b394aa7bb776e9e05abfb54eaa1193404e767a3720d64ff2c8f64c7cfb432b.css" media="all" rel="stylesheet" />
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="d8c98f676a84074e429a28930f64e7aa">
+
+      
+  <meta name="description" content="angularjs-google-maps - The Simplest AngularJS Google Maps V3 Directive ">
+  <meta name="go-import" content="github.com/allenhwkim/angularjs-google-maps git https://github.com/allenhwkim/angularjs-google-maps.git">
+
+  <meta content="1437734" name="octolytics-dimension-user_id" /><meta content="allenhwkim" name="octolytics-dimension-user_login" /><meta content="15286424" name="octolytics-dimension-repository_id" /><meta content="allenhwkim/angularjs-google-maps" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="15286424" name="octolytics-dimension-repository_network_root_id" /><meta content="allenhwkim/angularjs-google-maps" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/allenhwkim/angularjs-google-maps/commits/master.atom" rel="alternate" title="Recent Commits to angularjs-google-maps:master" type="application/atom+xml">
+
+  </head>
+
+
+  <body class="logged_out   env-production  vis-public">
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+
+    
+    
+    
+
+
+
+      
+      <div class="header header-logged-out" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions" role="navigation">
+        <a class="btn btn-primary" href="/join" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+      <a class="btn" href="/login?return_to=%2Fallenhwkim%2Fangularjs-google-maps" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+    </div>
+
+    <div class="site-search repo-scope js-site-search" role="search">
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/allenhwkim/angularjs-google-maps/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/allenhwkim/angularjs-google-maps/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text"
+      class="js-site-search-focus js-site-search-field is-clearable chromeless-input"
+      data-hotkey="s"
+      name="q"
+      placeholder="Search"
+      aria-label="Search this repository"
+      data-global-scope-placeholder="Search GitHub"
+      data-repo-scope-placeholder="Search"
+      tabindex="1"
+      autocapitalize="off">
+  </label>
+</form>
+    </div>
+
+      <ul class="header-nav left" role="navigation">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/explore" data-ga-click="(Logged out) Header, go to explore, text:explore">Explore</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/features" data-ga-click="(Logged out) Header, go to features, text:features">Features</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://enterprise.github.com/" data-ga-click="(Logged out) Header, go to enterprise, text:enterprise">Enterprise</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="/pricing" data-ga-click="(Logged out) Header, go to pricing, text:pricing">Pricing</a>
+          </li>
+      </ul>
+
+  </div>
+</div>
+
+
+
+    <div id="start-of-content" class="accessibility-aid"></div>
+
+      <div id="js-flash-container">
+</div>
+
+
+    <div role="main" class="main-content">
+        <div itemscope itemtype="http://schema.org/WebPage">
+    <div id="js-repo-pjax-container" class="context-loader-container js-repo-nav-next" data-pjax-container>
+      
+<div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav">
+  <div class="container repohead-details-container">
+
+    
+
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fallenhwkim%2Fangularjs-google-maps"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <span class="octicon octicon-eye"></span>
+    Watch
+  </a>
+  <a class="social-count" href="/allenhwkim/angularjs-google-maps/watchers">
+    60
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fallenhwkim%2Fangularjs-google-maps"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star "></span>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/allenhwkim/angularjs-google-maps/stargazers">
+      789
+    </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fallenhwkim%2Fangularjs-google-maps"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-repo-forked "></span>
+        Fork
+      </a>
+
+    <a href="/allenhwkim/angularjs-google-maps/network" class="social-count">
+      221
+    </a>
+  </li>
+</ul>
+
+    <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+  <span class="octicon octicon-repo "></span>
+  <span class="author"><a href="/allenhwkim" class="url fn" itemprop="url" rel="author"><span itemprop="title">allenhwkim</span></a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong><a href="/allenhwkim/angularjs-google-maps" data-pjax="#js-repo-pjax-container">angularjs-google-maps</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+  </span>
+
+</h1>
+
+  </div>
+  <div class="container">
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <a href="/allenhwkim/angularjs-google-maps" aria-label="Code" aria-selected="true" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /allenhwkim/angularjs-google-maps">
+    <span class="octicon octicon-code "></span>
+    Code
+</a>
+    <a href="/allenhwkim/angularjs-google-maps/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /allenhwkim/angularjs-google-maps/issues">
+      <span class="octicon octicon-issue-opened "></span>
+      Issues
+      <span class="counter">10</span>
+</a>
+  <a href="/allenhwkim/angularjs-google-maps/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /allenhwkim/angularjs-google-maps/pulls">
+    <span class="octicon octicon-git-pull-request "></span>
+    Pull requests
+    <span class="counter">0</span>
+</a>
+
+  <a href="/allenhwkim/angularjs-google-maps/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="pulse /allenhwkim/angularjs-google-maps/pulse">
+    <span class="octicon octicon-pulse "></span>
+    Pulse
+</a>
+  <a href="/allenhwkim/angularjs-google-maps/graphs" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors /allenhwkim/angularjs-google-maps/graphs">
+    <span class="octicon octicon-graph "></span>
+    Graphs
+</a>
+
+</nav>
+
+  </div>
+</div>
+
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+
+    
+<div class="repository-meta js-details-container">
+  <span class="repository-meta-content">
+        The Simplest AngularJS Google Maps V3 Directive 
+        <a href="http://ngmap.github.io" rel="nofollow">http://ngmap.github.io</a>
+  </span>
+
+</div>
+
+
+<div class="overall-summary overall-summary-bottomless">
+
+  <div class="stats-switcher-viewport js-stats-switcher-viewport">
+    <div class="stats-switcher-wrapper">
+    <ul class="numbers-summary">
+      <li class="commits">
+        <a data-pjax href="/allenhwkim/angularjs-google-maps/commits/master">
+            <span class="octicon octicon-history "></span>
+            <span class="num text-emphasized">
+              632
+            </span>
+            commits
+        </a>
+      </li>
+      <li>
+        <a data-pjax href="/allenhwkim/angularjs-google-maps/branches">
+          <span class="octicon octicon-git-branch "></span>
+          <span class="num text-emphasized">
+            3
+          </span>
+          branches
+        </a>
+      </li>
+
+      <li>
+        <a data-pjax href="/allenhwkim/angularjs-google-maps/releases">
+          <span class="octicon octicon-tag "></span>
+          <span class="num text-emphasized">
+            133
+          </span>
+          releases
+        </a>
+      </li>
+
+      <li>
+        
+  <a href="/allenhwkim/angularjs-google-maps/graphs/contributors">
+    <span class="octicon octicon-organization "></span>
+    <span class="num text-emphasized">
+      27
+    </span>
+    contributors
+  </a>
+      </li>
+    </ul>
+
+      <div class="repository-lang-stats">
+        <ol class="repository-lang-stats-numbers">
+          <li>
+              <a href="/allenhwkim/angularjs-google-maps/search?l=html">
+                <span class="color-block language-color" style="background-color:#e44b23;"></span>
+                <span class="lang">HTML</span>
+                <span class="percent">53.6%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/allenhwkim/angularjs-google-maps/search?l=javascript">
+                <span class="color-block language-color" style="background-color:#f1e05a;"></span>
+                <span class="lang">JavaScript</span>
+                <span class="percent">44.6%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/allenhwkim/angularjs-google-maps/search?l=css">
+                <span class="color-block language-color" style="background-color:#563d7c;"></span>
+                <span class="lang">CSS</span>
+                <span class="percent">1.8%</span>
+              </a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <div class="repository-lang-stats-graph js-toggle-lang-stats" title="Click for language details">
+    <span class="language-color" aria-label="HTML 53.6%" style="width:53.6%; background-color:#e44b23;" itemprop="keywords">HTML</span>
+    <span class="language-color" aria-label="JavaScript 44.6%" style="width:44.6%; background-color:#f1e05a;" itemprop="keywords">JavaScript</span>
+    <span class="language-color" aria-label="CSS 1.8%" style="width:1.8%; background-color:#563d7c;" itemprop="keywords">CSS</span>
+  </div>
+
+<include-fragment src="/allenhwkim/angularjs-google-maps/show_partial?partial=tree%2Frecently_touched_branches_list"></include-fragment>
+
+<div class="file-navigation in-mid-page file-navigation-new">
+  <div class="right">
+    <div class="btn-group">
+      
+  <button class="btn btn-sm disabled tooltipped tooltipped-n" aria-label="You must be signed in to make or propose changes" type="button">
+    New file
+  </button>
+
+
+
+      <a href="/allenhwkim/angularjs-google-maps/find/master"
+        class="btn btn-sm empty-icon right js-show-file-finder"
+        data-pjax
+        data-hotkey="t"
+        data-ga-click="Repository, find file, location:repo overview">
+        Find file
+      </a>
+    </div>
+      <div class="file-navigation-options" data-multiple>
+
+        <div class="file-navigation-option">
+          <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/users/set_protocol" class="js-set-user-protocol-preference" data-form-nonce="77607d76c22caf44733d90d317cb7a4bd2b9fdfa" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="KCB8kdgDpp7z99sCabiVCUT6zPDB7xWNw1j0610fzxy1TapYcAbkYj+6y0CWCPi0EfYioBXViqDBngi91cp6Fw==" /></div>
+            <input type="hidden" name="protocol_type" value="clone">
+
+            <div class="select-menu js-menu-container js-select-menu">
+              <div class="input-group js-select-button js-zeroclipboard-container">
+                <div class="input-group-button">
+  <button type="button" class="btn btn-sm select-menu-button js-menu-target" data-ga-click="Repository, clone HTTPS, location:repo overview">
+    HTTPS
+  </button>
+</div>
+<input type="text" class="input-monospace input-mini js-zeroclipboard-target js-url-field" value="https://github.com/allenhwkim/angularjs-google-maps.git" readonly>
+<div class="input-group-button">
+  <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy "></span></button>
+</div>
+
+              </div>
+
+              <div class="select-menu-modal-holder">
+                <div class="select-menu-modal js-menu-content" aria-hidden="true">
+                  <div class="select-menu-header">
+                    <span aria-label="Close" class="octicon octicon-x js-menu-close" role="button"></span>
+                    <span class="select-menu-title">Choose a clone URL</span>
+                  </div>
+
+                  <div class="select-menu-list js-navigation-container" role="menu">
+                      <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+                        <span class="select-menu-item-icon octicon octicon-check"></span>
+                        <div class="select-menu-item-text">
+                          <input type="radio" name="protocol_selector" value="http" checked>
+                          <span class="select-menu-item-heading">
+                            HTTPS
+                            (recommended)
+                          </span>
+                            <span class="description">
+                              Clone with Git or checkout with SVN using the repository's web address.
+                            </span>
+                          <span class="js-select-button-text hidden-select-button-text">
+                            <div class="input-group-button">
+  <button type="button" class="btn btn-sm select-menu-button js-menu-target" data-ga-click="Repository, clone HTTPS, location:repo overview">
+    HTTPS
+  </button>
+</div>
+<input type="text" class="input-monospace input-mini js-zeroclipboard-target js-url-field" value="https://github.com/allenhwkim/angularjs-google-maps.git" readonly>
+<div class="input-group-button">
+  <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy "></span></button>
+</div>
+
+                          </span>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="select-menu-list" role="menu">
+                    <a class="select-menu-item select-menu-action" href="https://help.github.com/articles/which-remote-url-should-i-use" target="_blank">
+                      <span class="select-menu-item-icon octicon octicon-question"></span>
+                      <div class="select-menu-item-text">
+                        Learn more about clone URLs
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+</form>        </div>
+
+        <div class="file-navigation-option">
+</div>
+
+
+        <div class="file-navigation-option">
+          <a href="/allenhwkim/angularjs-google-maps/archive/master.zip"
+             class="btn btn-sm"
+             rel="nofollow"
+             data-ga-click="Repository, download zip, location:repo overview">
+            Download ZIP
+          </a>
+        </div>
+      </div>
+  </div>
+
+  
+<div class="select-menu js-menu-container js-select-menu left">
+  <button class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    title="master"
+    type="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <i>Branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span aria-label="Close" class="octicon octicon-x js-menu-close" role="button"></span>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/allenhwkim/angularjs-google-maps/tree/angualr2-prepared"
+               data-name="angualr2-prepared"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="angualr2-prepared">
+                angualr2-prepared
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/allenhwkim/angularjs-google-maps/tree/map-pool"
+               data-name="map-pool"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="map-pool">
+                map-pool
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/allenhwkim/angularjs-google-maps/tree/master"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="master">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.15.9"
+                 data-name="v1.15.9"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.15.9">v1.15.9</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.15.8"
+                 data-name="v1.15.8"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.15.8">v1.15.8</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.15.7"
+                 data-name="v1.15.7"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.15.7">v1.15.7</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.15.6"
+                 data-name="v1.15.6"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.15.6">v1.15.6</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.15.5"
+                 data-name="v1.15.5"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.15.5">v1.15.5</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.15.4"
+                 data-name="v1.15.4"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.15.4">v1.15.4</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.15.3"
+                 data-name="v1.15.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.15.3">v1.15.3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.15.2"
+                 data-name="v1.15.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.15.2">v1.15.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.15.1"
+                 data-name="v1.15.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.15.1">v1.15.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.15.0"
+                 data-name="v1.15.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.15.0">v1.15.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.14.16"
+                 data-name="v1.14.16"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.14.16">v1.14.16</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.14.15"
+                 data-name="v1.14.15"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.14.15">v1.14.15</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.14.14"
+                 data-name="v1.14.14"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.14.14">v1.14.14</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.14.13"
+                 data-name="v1.14.13"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.14.13">v1.14.13</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.14.12"
+                 data-name="v1.14.12"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.14.12">v1.14.12</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v.1.14.11"
+                 data-name="v.1.14.11"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v.1.14.11">v.1.14.11</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.14.10"
+                 data-name="v1.14.10"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.14.10">v1.14.10</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.14.9"
+                 data-name="v1.14.9"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.14.9">v1.14.9</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.14.8"
+                 data-name="v1.14.8"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.14.8">v1.14.8</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.14.7"
+                 data-name="v1.14.7"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.14.7">v1.14.7</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.14.6"
+                 data-name="v1.14.6"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.14.6">v1.14.6</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.14.5"
+                 data-name="v1.14.5"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.14.5">v1.14.5</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.14.4"
+                 data-name="v1.14.4"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.14.4">v1.14.4</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.14.3"
+                 data-name="v1.14.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.14.3">v1.14.3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.14.2"
+                 data-name="v1.14.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.14.2">v1.14.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.14.1"
+                 data-name="v1.14.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.14.1">v1.14.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.14.0"
+                 data-name="v1.14.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.14.0">v1.14.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.13.15"
+                 data-name="v1.13.15"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.13.15">v1.13.15</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.13.14"
+                 data-name="v1.13.14"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.13.14">v1.13.14</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.13.13"
+                 data-name="v1.13.13"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.13.13">v1.13.13</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.13.12"
+                 data-name="v1.13.12"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.13.12">v1.13.12</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.13.11"
+                 data-name="v1.13.11"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.13.11">v1.13.11</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.13.10"
+                 data-name="v1.13.10"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.13.10">v1.13.10</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.13.9"
+                 data-name="v1.13.9"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.13.9">v1.13.9</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.13.8"
+                 data-name="v1.13.8"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.13.8">v1.13.8</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.13.7"
+                 data-name="v1.13.7"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.13.7">v1.13.7</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.13.6"
+                 data-name="v1.13.6"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.13.6">v1.13.6</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.13.4"
+                 data-name="v1.13.4"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.13.4">v1.13.4</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.13.2"
+                 data-name="v1.13.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.13.2">v1.13.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.13.1"
+                 data-name="v1.13.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.13.1">v1.13.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.13.0"
+                 data-name="v1.13.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.13.0">v1.13.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.12.1"
+                 data-name="v1.12.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.12.1">v1.12.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.12.0"
+                 data-name="v1.12.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.12.0">v1.12.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.11.5"
+                 data-name="v1.11.5"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.11.5">v1.11.5</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.11.4"
+                 data-name="v1.11.4"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.11.4">v1.11.4</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.11.3"
+                 data-name="v1.11.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.11.3">v1.11.3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.11.2"
+                 data-name="v1.11.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.11.2">v1.11.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.11.1"
+                 data-name="v1.11.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.11.1">v1.11.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.11.0"
+                 data-name="v1.11.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.11.0">v1.11.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.10.1"
+                 data-name="v1.10.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.10.1">v1.10.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.10.0"
+                 data-name="v1.10.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.10.0">v1.10.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.9.1"
+                 data-name="v1.9.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.9.1">v1.9.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.9.0"
+                 data-name="v1.9.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.9.0">v1.9.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.8.1"
+                 data-name="v1.8.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.8.1">v1.8.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.8.0"
+                 data-name="v1.8.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.8.0">v1.8.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.7.13"
+                 data-name="v1.7.13"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.7.13">v1.7.13</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.7.12"
+                 data-name="v1.7.12"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.7.12">v1.7.12</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.7.11"
+                 data-name="v1.7.11"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.7.11">v1.7.11</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.7.10"
+                 data-name="v1.7.10"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.7.10">v1.7.10</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.7.9"
+                 data-name="v1.7.9"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.7.9">v1.7.9</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.7.8"
+                 data-name="v1.7.8"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.7.8">v1.7.8</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.7.7"
+                 data-name="v1.7.7"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.7.7">v1.7.7</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.7.6"
+                 data-name="v1.7.6"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.7.6">v1.7.6</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.7.5"
+                 data-name="v1.7.5"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.7.5">v1.7.5</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.7%2C4"
+                 data-name="v1.7,4"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.7,4">v1.7,4</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.7.4"
+                 data-name="v1.7.4"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.7.4">v1.7.4</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.7.3"
+                 data-name="v1.7.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.7.3">v1.7.3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.7.2"
+                 data-name="v1.7.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.7.2">v1.7.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.7.1"
+                 data-name="v1.7.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.7.1">v1.7.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.7.0"
+                 data-name="v1.7.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.7.0">v1.7.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.6.0"
+                 data-name="v1.6.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.6.0">v1.6.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.5.0"
+                 data-name="v1.5.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.5.0">v1.5.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.4.7"
+                 data-name="v1.4.7"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.4.7">v1.4.7</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.4.5"
+                 data-name="v1.4.5"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.4.5">v1.4.5</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.4.4"
+                 data-name="v1.4.4"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.4.4">v1.4.4</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.4.3"
+                 data-name="v1.4.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.4.3">v1.4.3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.4.2"
+                 data-name="v1.4.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.4.2">v1.4.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.4.1"
+                 data-name="v1.4.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.4.1">v1.4.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.4.0"
+                 data-name="v1.4.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.4.0">v1.4.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.3.1"
+                 data-name="v1.3.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.3.1">v1.3.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.3.0"
+                 data-name="v1.3.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.3.0">v1.3.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.2.0"
+                 data-name="v1.2.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.2.0">v1.2.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.1.7"
+                 data-name="v1.1.7"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.1.7">v1.1.7</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.1.6"
+                 data-name="v1.1.6"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.1.6">v1.1.6</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.1.5"
+                 data-name="v1.1.5"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.1.5">v1.1.5</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.1.4"
+                 data-name="v1.1.4"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.1.4">v1.1.4</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.1.2"
+                 data-name="v1.1.2"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.1.2">v1.1.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.1.0"
+                 data-name="v1.1.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.1.0">v1.1.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v1.0.0"
+                 data-name="v1.0.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v1.0.0">v1.0.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v0.22.0"
+                 data-name="v0.22.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.22.0">v0.22.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v0.21.0"
+                 data-name="v0.21.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.21.0">v0.21.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v0.20.0"
+                 data-name="v0.20.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.20.0">v0.20.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v0.19.0"
+                 data-name="v0.19.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.19.0">v0.19.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v0.18.0"
+                 data-name="v0.18.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.18.0">v0.18.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v0.17.3"
+                 data-name="v0.17.3"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.17.3">v0.17.3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v0.17.0"
+                 data-name="v0.17.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.17.0">v0.17.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v0.16.0"
+                 data-name="v0.16.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.16.0">v0.16.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v0.15.4"
+                 data-name="v0.15.4"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.15.4">v0.15.4</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v0.15.0"
+                 data-name="v0.15.0"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.15.0">v0.15.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/allenhwkim/angularjs-google-maps/tree/v0.14.1"
+                 data-name="v0.14.1"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text css-truncate-target"
+                 title="v0.14.1">v0.14.1</a>
+            </div>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+    <a href="/allenhwkim/angularjs-google-maps/pull/new/master" class="btn btn-sm btn-primary" data-pjax data-ga-click="Repository, new pull request, location:repo overview">
+      New pull request
+    </a>
+
+  <div class="breadcrumb">
+    
+  </div>
+</div>
+
+
+
+
+  <div class="commit-tease js-details-container">
+    <span class="right">
+      Latest commit
+      <a class="commit-tease-sha" href="/allenhwkim/angularjs-google-maps/commit/e6584abde4bb025ad4909b5c45edda45f02c98d4" data-pjax>
+        e6584ab
+      </a>
+      <time datetime="2015-12-24T14:57:52Z" is="relative-time">Dec 24, 2015</time>
+    </span>
+
+
+    <span class="commit-author-section">
+      <img alt="@allenhwkim" class="avatar" height="20" src="https://avatars2.githubusercontent.com/u/1437734?v=3&amp;s=40" width="20" />
+      <a href="/allenhwkim" class="user-mention" rel="author">allenhwkim</a>
+    </span>
+
+        <a href="/allenhwkim/angularjs-google-maps/commit/e6584abde4bb025ad4909b5c45edda45f02c98d4" class="message" data-pjax="true" title="Version 1.15.9">Version 1.15.9</a>
+    </span>
+
+  </div>
+
+
+<div class="file-wrap ">
+
+  <a href="/allenhwkim/angularjs-google-maps/tree/e6584abde4bb025ad4909b5c45edda45f02c98d4" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+  <table class="files js-navigation-container js-active-navigation-container" data-pjax>
+
+
+    <tbody>
+      <tr class="warning include-fragment-error">
+        <td class="icon"><span class="octicon octicon-alert"></span></td>
+        <td class="content" colspan="3">Failed to load latest commit information.</td>
+      </tr>
+
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory "></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/allenhwkim/angularjs-google-maps/tree/master/build" class="js-directory-link js-navigation-open" id="b0da275520918e23dd615e2a747528f1-e89e98a19170315b6cb8a74c716227b96ac7979f" title="build">build</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/allenhwkim/angularjs-google-maps/commit/e6584abde4bb025ad4909b5c45edda45f02c98d4" class="message" data-pjax="true" title="Version 1.15.9">Version 1.15.9</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-12-24T14:57:52Z" is="time-ago">Dec 24, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory "></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/allenhwkim/angularjs-google-maps/tree/master/config" class="js-directory-link js-navigation-open" id="2245023265ae4cf87d02c8b6ba991139-ccfee2528cd30923f922c03d2609d575649fa8fe" title="config">config</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/allenhwkim/angularjs-google-maps/commit/5101c9615887464b1df22febd1f208b930e01323" class="message" data-pjax="true" title="test enhancement and bug fixes on example">test enhancement and bug fixes on example</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-12-13T15:37:13Z" is="time-ago">Dec 13, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory "></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/allenhwkim/angularjs-google-maps/tree/master/controllers" class="js-directory-link js-navigation-open" id="2068e59180763f350d66a42e828e7f96-1bb6ed311aadde0720e184175a2aef684a32ada5" title="controllers">controllers</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/allenhwkim/angularjs-google-maps/commit/a2aa890574278478bba8cf87698ed1b4d1fccb53" class="message" data-pjax="true" title="issue #449, fixed custom marker not removed bug">issue</a> <a href="https://github.com/allenhwkim/angularjs-google-maps/issues/449" class="issue-link js-issue-link" data-url="https://github.com/allenhwkim/angularjs-google-maps/issues/449" data-id="123787487" data-error-text="Failed to load issue title" data-permission-text="Issue title is private">#449</a><a href="/allenhwkim/angularjs-google-maps/commit/a2aa890574278478bba8cf87698ed1b4d1fccb53" class="message" data-pjax="true" title="issue #449, fixed custom marker not removed bug">, fixed custom marker not removed bug</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-12-24T14:57:26Z" is="time-ago">Dec 24, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory "></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/allenhwkim/angularjs-google-maps/tree/master/directives" class="js-directory-link js-navigation-open" id="8fe7c9bd9a6f645b80a6db7c2496dc81-7ac74e1c26709012aec2aa904c08b8fdffca6daa" title="directives">directives</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/allenhwkim/angularjs-google-maps/commit/a2aa890574278478bba8cf87698ed1b4d1fccb53" class="message" data-pjax="true" title="issue #449, fixed custom marker not removed bug">issue</a> <a href="https://github.com/allenhwkim/angularjs-google-maps/issues/449" class="issue-link js-issue-link" data-url="https://github.com/allenhwkim/angularjs-google-maps/issues/449" data-id="123787487" data-error-text="Failed to load issue title" data-permission-text="Issue title is private">#449</a><a href="/allenhwkim/angularjs-google-maps/commit/a2aa890574278478bba8cf87698ed1b4d1fccb53" class="message" data-pjax="true" title="issue #449, fixed custom marker not removed bug">, fixed custom marker not removed bug</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-12-24T14:57:26Z" is="time-ago">Dec 24, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory "></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/allenhwkim/angularjs-google-maps/tree/master/filters" class="js-directory-link js-navigation-open" id="2c9885d2b0c7e26971f60a90f33cf718-99eeaf9223d9f2ff81b67f547e616ba1d0d45b71" title="filters">filters</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/allenhwkim/angularjs-google-maps/commit/d3049a1c82185376cd6b183050fd16d9315fd52d" class="message" data-pjax="true" title="removed scope wherever possible for Angular2">removed scope wherever possible for Angular2</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-11-07T15:19:30Z" is="time-ago">Nov 7, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory "></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/allenhwkim/angularjs-google-maps/tree/master/services" class="js-directory-link js-navigation-open" id="10cd395cf71c18328c863c08e78f3fd0-a74475463ee8160973b43c7028b09d82a9210a85" title="services">services</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/allenhwkim/angularjs-google-maps/commit/a985eac5bed4708b208507a20f12aba11b4334e0" class="message" data-pjax="true" title="[deleteMap] clear controllers only when is it defined">[deleteMap] clear controllers only when is it defined</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-12-23T10:24:54Z" is="time-ago">Dec 23, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory "></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/allenhwkim/angularjs-google-maps/tree/master/spec" class="js-directory-link js-navigation-open" id="b979c2934ac0b4ba3f08dabfdd1b2299-6cc5375206196f2ba8f002181f3d7dacc92548b6" title="spec">spec</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/allenhwkim/angularjs-google-maps/commit/6e2e32da389b34d0c04d37a38b9385addf446956" class="message" data-pjax="true" title="made map instance pooling avaliable">made map instance pooling avaliable</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-12-19T03:53:01Z" is="time-ago">Dec 18, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-directory "></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/allenhwkim/angularjs-google-maps/tree/master/testapp" class="js-directory-link js-navigation-open" id="0d1db77ee324390a18cda6b3112df9c6-515e90151134ea98b10196de492d91f30dfd3948" title="testapp">testapp</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/allenhwkim/angularjs-google-maps/commit/a2aa890574278478bba8cf87698ed1b4d1fccb53" class="message" data-pjax="true" title="issue #449, fixed custom marker not removed bug">issue</a> <a href="https://github.com/allenhwkim/angularjs-google-maps/issues/449" class="issue-link js-issue-link" data-url="https://github.com/allenhwkim/angularjs-google-maps/issues/449" data-id="123787487" data-error-text="Failed to load issue title" data-permission-text="Issue title is private">#449</a><a href="/allenhwkim/angularjs-google-maps/commit/a2aa890574278478bba8cf87698ed1b4d1fccb53" class="message" data-pjax="true" title="issue #449, fixed custom marker not removed bug">, fixed custom marker not removed bug</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-12-24T14:57:26Z" is="time-ago">Dec 24, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text "></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/allenhwkim/angularjs-google-maps/blob/master/.gitattributes" class="js-directory-link js-navigation-open" id="fc723d30b02a4cca7a534518111c1a66-176a458f94e0ea5272ce67c36bf30b6be9caf623" title=".gitattributes">.gitattributes</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/allenhwkim/angularjs-google-maps/commit/093b17c34bea3733e22c8eb1af93b394b36f5bee" class="message" data-pjax="true" title="hello mapgit status">hello mapgit status</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2013-12-18T21:26:16Z" is="time-ago">Dec 18, 2013</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text "></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/allenhwkim/angularjs-google-maps/blob/master/.gitignore" class="js-directory-link js-navigation-open" id="a084b794bc0759e7a6b77810e01874f2-620da4e257cfe14e3837bce45b63a01e6e28a07c" title=".gitignore">.gitignore</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/allenhwkim/angularjs-google-maps/commit/bf766636a4675b707aa28bc93c13d433f9fe6013" class="message" data-pjax="true" title="Bug Fix for auto zoom.
+Updated docs about zoom-to-include-markers">Bug Fix for auto zoom.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-07-29T19:51:20Z" is="time-ago">Jul 29, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text "></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/allenhwkim/angularjs-google-maps/blob/master/.travis.yml" class="js-directory-link js-navigation-open" id="354f30a63fb0907d4ad57269548329e3-9c351ab34d09b0dd7d9b10ee49d1125c5ab450f5" title=".travis.yml">.travis.yml</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/allenhwkim/angularjs-google-maps/commit/4d1a766625b771919d9b5b4948dd83582046439f" class="message" data-pjax="true" title="Version 0.13.0">Version 0.13.0</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2014-06-26T16:56:07Z" is="time-ago">Jun 26, 2014</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text "></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/allenhwkim/angularjs-google-maps/blob/master/CHANGELOG.md" class="js-directory-link js-navigation-open" id="4ac32a78649ca5bdd8e0ba38b7006a1e-ca0b994ffa62acf2afe1502c5ac236e2834c6d28" title="CHANGELOG.md">CHANGELOG.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/allenhwkim/angularjs-google-maps/commit/d3fc4f97942fa871e2595c2fb73a2a9a9d09f3ad" class="message" data-pjax="true" title="Update CHANGELOG.md">Update CHANGELOG.md</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-12-08T02:37:56Z" is="time-ago">Dec 7, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text "></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/allenhwkim/angularjs-google-maps/blob/master/CONTRIBUTORS.md" class="js-directory-link js-navigation-open" id="f0eaedffe49f98e11072394a678af7cc-5d0cea400a74a5631804a411ac658cf9d0eec76e" title="CONTRIBUTORS.md">CONTRIBUTORS.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/allenhwkim/angularjs-google-maps/commit/0f36ef9642e8f72e42701acb25a78f2acb1730f1" class="message" data-pjax="true" title="updated contributors list">updated contributors list</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-12-23T04:31:00Z" is="time-ago">Dec 22, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text "></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/allenhwkim/angularjs-google-maps/blob/master/LICENSE" class="js-directory-link js-navigation-open" id="9879d6db96fd29134fc802214163b95a-c959483ddc2dacbb425afb0a15c124d0bcadd6a5" title="LICENSE">LICENSE</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/allenhwkim/angularjs-google-maps/commit/66e2a19d4042e70616ed48ede8ebc51cb8fde622" class="message" data-pjax="true" title="Update LICENSE">Update LICENSE</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-05-02T02:27:31Z" is="time-ago">May 1, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text "></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/allenhwkim/angularjs-google-maps/blob/master/README.md" class="js-directory-link js-navigation-open" id="04c6e90faac2675aa89e2176d2eec7d8-0866831aeafa06af91033b71dd97c458a5d6abb5" title="README.md">README.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/allenhwkim/angularjs-google-maps/commit/4a762e94e76a421461131f1c13e2aeda380c93c1" class="message" data-pjax="true" title="Moved release notes to changelog.">Moved release notes to changelog.</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-11-27T18:54:49Z" is="time-ago">Nov 27, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text "></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/allenhwkim/angularjs-google-maps/blob/master/app.js" class="js-directory-link js-navigation-open" id="0364f57fbff2fabbe941ed20c328ef1a-16d18cd7845b56e2e20c22dbe39f9df9b053d1ac" title="app.js">app.js</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/allenhwkim/angularjs-google-maps/commit/6bdae1ba5757857acd04bc645381ca99e6287973" class="message" data-pjax="true" title="refactored directory structure from app/scripts/* to *">refactored directory structure from app/scripts/* to *</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-07-20T22:58:41Z" is="time-ago">Jul 20, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text "></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/allenhwkim/angularjs-google-maps/blob/master/bower.json" class="js-directory-link js-navigation-open" id="0a08a7565aba4405282251491979bb6b-cf26c37a3ff956d9da557741c8f22c0b5a8af955" title="bower.json">bower.json</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/allenhwkim/angularjs-google-maps/commit/e6584abde4bb025ad4909b5c45edda45f02c98d4" class="message" data-pjax="true" title="Version 1.15.9">Version 1.15.9</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-12-24T14:57:52Z" is="time-ago">Dec 24, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text "></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/allenhwkim/angularjs-google-maps/blob/master/contributors.js" class="js-directory-link js-navigation-open" id="434a183e84f5d09bee56e5384766f85f-64c11a4d3828edaf19523896a4e418a6c49acc47" title="contributors.js">contributors.js</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/allenhwkim/angularjs-google-maps/commit/a6f5acc32809f0c5c1872e4000f5634555976166" class="message" data-pjax="true" title="Added contributors generation .js and CONTRIBUTORS.md">Added contributors generation .js and CONTRIBUTORS.md</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-08-31T04:52:46Z" is="time-ago">Aug 31, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text "></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/allenhwkim/angularjs-google-maps/blob/master/favicon.ico" class="js-directory-link js-navigation-open" id="8af3a74ede48e250ceb935c026242483-be74abd69ad6a32de7375df13cab9354798e328f" title="favicon.ico">favicon.ico</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/allenhwkim/angularjs-google-maps/commit/d3049a1c82185376cd6b183050fd16d9315fd52d" class="message" data-pjax="true" title="removed scope wherever possible for Angular2">removed scope wherever possible for Angular2</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-11-07T15:19:30Z" is="time-ago">Nov 7, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text "></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/allenhwkim/angularjs-google-maps/blob/master/gulpfile.js" class="js-directory-link js-navigation-open" id="b9e12334e9eafd8341a6107dd98510c9-979a276c58962e91eb846cb76ba55ba52fb7448a" title="gulpfile.js">gulpfile.js</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/allenhwkim/angularjs-google-maps/commit/af5448319d6a8c89cf5f9fdbdb0cf9ed1aa37474" class="message" data-pjax="true" title="made test more flexible and reliable">made test more flexible and reliable</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-12-12T16:03:44Z" is="time-ago">Dec 12, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text "></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/allenhwkim/angularjs-google-maps/blob/master/package.json" class="js-directory-link js-navigation-open" id="b9cfc7f2cdf78a7f4b91a753d10865a2-452c12c569f251c4cfaf00de25979928380a8d5d" title="package.json">package.json</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/allenhwkim/angularjs-google-maps/commit/e6584abde4bb025ad4909b5c45edda45f02c98d4" class="message" data-pjax="true" title="Version 1.15.9">Version 1.15.9</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-12-24T14:57:52Z" is="time-ago">Dec 24, 2015</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <span class="octicon octicon-file-text "></span>
+            <img alt="" class="spinner" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="/allenhwkim/angularjs-google-maps/blob/master/road-trip.md" class="js-directory-link js-navigation-open" id="3e8b475b2bea036210324530d98c5d7b-d45cea5c17a56a2f23a2f0f209ea674a309a81fc" title="road-trip.md">road-trip.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="/allenhwkim/angularjs-google-maps/commit/d68f1ad0e65908856576cc1d10b820635a69e5c5" class="message" data-pjax="true" title="issue #176, fixed infowindow bug">issue</a> <a href="https://github.com/allenhwkim/angularjs-google-maps/issues/176" class="issue-link js-issue-link" data-url="https://github.com/allenhwkim/angularjs-google-maps/issues/176" data-id="67127174" data-error-text="Failed to load issue title" data-permission-text="Issue title is private">#176</a><a href="/allenhwkim/angularjs-google-maps/commit/d68f1ad0e65908856576cc1d10b820635a69e5c5" class="message" data-pjax="true" title="issue #176, fixed infowindow bug">, fixed infowindow bug</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-04-08T15:42:06Z" is="time-ago">Apr 8, 2015</time></span>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+  <div id="readme" class="boxed-group clearfix announce instapaper_body md">
+    <h3>
+      <span class="octicon octicon-book"></span>
+      README.md
+    </h3>
+
+      <article class="markdown-body entry-content" itemprop="mainContentOfPage"><h1><a id="user-content-googlemap-angularjs-directive" class="anchor" href="#googlemap-angularjs-directive" aria-hidden="true"><span class="octicon octicon-link"></span></a>GoogleMap AngularJS Directive</h1>
+
+<p><a href="https://travis-ci.org/allenhwkim/angularjs-google-maps"><img src="https://camo.githubusercontent.com/2958087a0c2df429b5dfd3296791beec69f957ba/68747470733a2f2f7472617669732d63692e6f72672f616c6c656e68776b696d2f616e67756c61726a732d676f6f676c652d6d6170732e706e673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/allenhwkim/angularjs-google-maps.png?branch=master" style="max-width:100%;"></a></p>
+
+<h2><a id="user-content-important-notice" class="anchor" href="#important-notice" aria-hidden="true"><span class="octicon octicon-link"></span></a>IMPORTANT NOTICE</h2>
+
+<ul>
+<li><code>$scope.map</code> is deprecated. Use <code>NgMap.getMap().then(function(map) {...})</code>
+instead to get a map instance.</li>
+<li><code>$scope.$on('mapInitialized', function(event, map) {..}</code> is deprecated.
+Use <code>NgMap.getMap().then(function(map) {...})</code> instead to get a map instance.</li>
+<li><code>$scope.showInfoWindow(id)</code> is deprecated. <code>map.showInfoWindow(id)</code> instead.
+You need to get map instance usng <code>NgMap.getMap().then()</code> in advance.</li>
+<li><code>map</code> tag is deprecated. Use <code>ng-map</code> tag instead</li>
+</ul>
+
+<p><a href="http://ngmap.github.io">Demo</a><br>
+<a href="https://rawgithub.com/allenhwkim/angularjs-google-maps/master/build/docs/index.html">Documentation</a><br>
+<a href="https://rawgit.com/allenhwkim/angularjs-google-maps/master/testapp/street-view_road_trip.html">Road Trip By StreetView</a><br>
+<a href="https://rawgit.com/allenhwkim/angularjs-google-maps/master/testapp/custom-marker.html">Maps Can Talk</a> |
+<a href="https://rawgit.com/allenhwkim/angularjs-google-maps/master/testapp/custom-marker-2.html">Custom Marker</a>  </p>
+
+<p>There is already <a href="https://github.com/nlaplante/angular-google-maps">one</a> for this. However, I found myself doing totally different approach than the existing one, such as;</p>
+
+<ol>
+<li><p><strong>Everything in tag and attributes.</strong><br>
+Thus, basic users don't even have to know what Javascript is. </p></li>
+<li><p><strong>Expose all original Google Maps V3 api to the user.</strong><br>
+No hiding, no wraping, or whatsoever. 
+By doing so, programmers don't need to learn how to use this module.
+You only need to know Google Maps V3 API.</p></li>
+</ol>
+
+<p>There is a blog that introduces this module. The title of it is '<a href="http://allenhwkim.tumblr.com/post/70986888283/google-map-as-the-simplest-way">Google Map As The Simplest Way</a>'</p>
+
+<h2><a id="user-content-to-get-started" class="anchor" href="#to-get-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>To Get Started</h2>
+
+<p>For Bower users, </p>
+
+<p><code>$ bower install ngmap</code></p>
+
+<ol>
+<li><p>Include <code>ng-map.min.js</code>:
+<code>&lt;script src="/bower_components/ngmap/build/scripts/ng-map.min.js"&gt;&lt;/script&gt;</code></p></li>
+<li><p>Include Google maps:<br>
+<code>&lt;script src="http://maps.google.com/maps/api/js"&gt;&lt;/script&gt;</code>  </p></li>
+<li><p>Name your angular app ngMap, or add it as a dependency</p>
+
+<p><code>var myApp = angular.module('myApp', ['ngMap']);</code></p></li>
+</ol>
+
+<p>To get the map instance use the <code>NgMap.getMap()</code> function</p>
+
+<pre><code>app.controller('MyController', function(NgMap) {
+  NgMap.getMap().then(function(map) {
+    console.log(map.getCenter());
+    console.log('markers', map.markers);
+    console.log('shapes', map.shapes);
+  });
+});
+</code></pre>
+
+<h2><a id="user-content-lazy-loading-of-google-maps-javascript" class="anchor" href="#lazy-loading-of-google-maps-javascript" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lazy Loading of Google Maps Javascript</h2>
+
+<p>Simply wrap the map tag with <code>map-lazy-load="https://maps.google.com/maps/api/js"</code>.</p>
+
+<pre><code>&lt;div map-lazy-load="https://maps.google.com/maps/api/js"&gt;
+  &lt;ng-map center="41,-87" zoom="3"&gt;&lt;/ng-map&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>If you need to pass in an API key to the javascript, you can set a scope
+  variable in your controller (e.g. <code>$scope.googleMapsUrl="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE";</code>).
+  This can be set from a constant value in your app to standardise the API key to pass to google for multiple controllers.</p>
+
+<pre><code>&lt;div map-lazy-load="https://maps.google.com/maps/api/js"
+  map-lazy-load-params="{{googleMapsUrl}}"&gt;
+  &lt;ng-map center="41,-87" zoom="3"&gt;&lt;/ng-map&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h2><a id="user-content-directives" class="anchor" href="#directives" aria-hidden="true"><span class="octicon octicon-link"></span></a>Directives</h2>
+
+<ul>
+<li>bicycling-layer</li>
+<li>custom-control</li>
+<li>custom-marker (NEW)</li>
+<li>directions (NEW)</li>
+<li>drawing-manager (NEW)</li>
+<li>dynamic-maps-engine-layer</li>
+<li>fusion-tables-layer</li>
+<li>heatmap-layer</li>
+<li>info-window</li>
+<li>kml-layer</li>
+<li>map</li>
+<li>map-data</li>
+<li>map-lazy-load (NEW)</li>
+<li>map-type</li>
+<li>map_controller</li>
+<li>maps-engine-layer</li>
+<li>marker</li>
+<li>overlay-map-type</li>
+<li>places-auto-complete</li>
+<li>shape</li>
+<li>street-view-panorama (NEW)</li>
+<li>traffic-layer</li>
+<li>transit-layer</li>
+</ul>
+
+<h2><a id="user-content-advanced-examples" class="anchor" href="#advanced-examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Advanced Examples</h2>
+
+<ul>
+<li><a href="https://rawgit.com/allenhwkim/angularjs-google-maps/master/testapp/marker-clusterer.html">Marker Clusterer</a></li>
+<li><a href="https://rawgit.com/allenhwkim/angularjs-google-maps/master/testapp/map_app.html">Starbucks World Wide</a></li>
+<li><a href="https://rawgit.com/allenhwkim/angularjs-google-maps/master/testapp/street-view_road_trip.html">Road Trip By StreetView</a></li>
+<li><a href="https://rawgit.com/allenhwkim/angularjs-google-maps/master/testapp/custom-marker.html">Maps Can Talk</a></li>
+<li><a href="https://rawgit.com/allenhwkim/angularjs-google-maps/master/testapp/custom-marker-2.html">Custom Marker</a></li>
+</ul>
+
+<h1><a id="user-content-contributors" class="anchor" href="#contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="/allenhwkim/angularjs-google-maps/blob/master/CONTRIBUTORS.md">Contributors</a></h1>
+
+<h1><a id="user-content-contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h1>
+
+<ul>
+<li>Clone the repository from github</li>
+<li>Change to the folder dowloaded</li>
+<li><strong>npm install</strong> to install the build tools</li>
+<li><strong>gulp build</strong> to build the javascript &amp; doc files in the /build folder &amp; run the unit tests.</li>
+<li><strong>gulp clean</strong> to cleanup the repository by removing files and folders from previous build.</li>
+<li><strong>gulp test</strong> to run the Karma unit test suite.</li>
+<li><strong>gulp test:e2e</strong> to run the Protractor test suite. For the first test run, you may need to update the protractor webdriver manager. It will show the command on screen if this is required (node_modules/gulp-protractor/node_modules/protractor/bin/webdriver-manager update).</li>
+<li><strong>gulp test:server</strong> will start a web server for the testapp on http://localhost:8888</li>
+</ul>
+
+<h1><a id="user-content-license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>license</h1>
+
+<p><a href="https://github.com/allenhwkim/angularjs-google-maps/blob/master/LICENSE">MIT License</a></p>
+</article>
+  </div>
+
+
+  </div>
+  <div class="modal-backdrop"></div>
+</div>
+
+    </div>
+  </div>
+
+    </div>
+
+        <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github " title="GitHub "></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.05825s from github-fe123-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+    
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+        <span class="octicon octicon-x"></span>
+      </button>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-ef8eb4a89ee9f3c8b7613307fe589a8f5705817f7cee27bec51ce5e963234abf.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-4b6b8e7d11ebb7bce85126d3b4130c80041f2ae6d5d6ef8901a8c0c3f7cb80d2.js"></script>
+      
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <span class="octicon octicon-alert"></span>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+  </body>
+</html>
+
