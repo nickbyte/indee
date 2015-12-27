@@ -13,7 +13,8 @@
     "angular-nvd3": "~1.0.5",
     "d3": "~3.5.12",
     "angular-jquery-timepicker": "~0.9.1",
-    "ngstorage": "~0.3.10"
+    "ngstorage": "~0.3.10",
+    "angularjs-google-maps": "https://github.com/allenhwkim/angularjs-google-maps"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0"

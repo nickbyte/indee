@@ -1,118 +1,106 @@
 <div class="intro-wrapper">
-<div class="container">
-<div class="col-md-12">
-<h2>Pirate-proof your movies!</h2>
-<p>Market your film. Dont leak it.</p>
-<a ng-click="triggerModal()" class="btn btn-primary btn-large">Get Started</a>
-</div>
- </div>
- </div>   
-<div class="list-wrapper">
-    <div class="container" >
-    <div class="col-md-4" ng-repeat="(key, value) in ipList"> 
-           <div class="cards">
-
-        <div class="card-head">
-             <h3>{{key}} <span>
-              <location data="{{key}}"></location>
-             </span></h3>
+    <div class="container">
+        <div class="col-md-12">
+            <h2>Pirate-proof your movies!</h2>
+            <p>Market your film. Dont leak it.</p>
+            <a ng-click="triggerModal()" class="btn btn-primary btn-large">Get Started</a>
         </div>
-      
-       <div class="map">
-       <showMap data="{{key}}"></showMap>
-       </div>
-        <div class="engagement">
-        <h4>Engagement</h4>
-     
-         <bars-chart chart-data="value"></bars-chart>
-         <div></div>
-       </div>
-          <div class="card-foot">
-         <showdate data="{{value[0].timestamp}}"></showdate>
-          </div>
-        </div>
-      
-           
-        </div>
- 
-    </div>  
-</div>
-<div class="modal" style="display:block;" tabindex="-1" role="dialog" ng-show="ismodalTriggered">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" ng-click="closeModal()" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Add Json</h4>
-      </div>
-      <div class="modal-body">
-       <form name="addviewer" class="form">
-     <div class="form-group">
-    <label for="json">IP Address</label>
-    <input type="text" class="form-control" name="ip_address" placeholder="IP Address" ng-pattern="/\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b/" ng-model="viewers.ip">
-    <div class="has-error">
-      <span class="help-block" ng-if="addviewer.ip_address.$error.pattern">Invalid IP Address</span>
     </div>
-      </div>
-       <div class="form-group">
-    <label for="json">Full Length</label>
-     <input type="text" class="form-control" name="full_length" placeholder="Full length of the movie, ex: 7.10" ng-model="viewers.fullLength" ng-pattern="/^[0-9]+([,.][0-9]+)?$/" ng-required="true">
-     <div class="has-error">
-        <span class="help-block" ng-if="addviewer.full_length.$error.pattern">Invalid video length</span>
-     </div>
-    
-  </div>
-       <div class="form-group">
-    <label for="json">Seek</label>
-    <div class="row">
-    <div class="col-md-6">
-       <input type="text" class="form-control" name="skip_start" placeholder="Start Time ex: 5.10" ng-model="viewers.skipStart" ng-pattern="/^[0-9]+([,.][0-9]+)?$/" ng-required="true">
-       <div class="has-error">
-          <span class="help-block" ng-if="addviewer.skip_start.$error.pattern">Invalid video length</span>
-       </div>
-       
-    </div>  
-   <div class="col-md-6">
-        <input type="text" class="form-control" name="skip_end" placeholder="End Time ex: 6.10" ng-model="viewers.skipEnd" ng-pattern="/^[0-9]+([,.][0-9]+)?$/" ng-required="true">
-        <div class="has-error">
-       
-        <span class="help-block" ng-if="addviewer.skip_end.$error.pattern">Invalid video length</span>
-             <span class="help-block" ng-if="addviewer.skip_end.$viewValue < addviewer.skip_start.$viewValue">end time cannot be smaller than start time</span>
-        </div>
-      
-   </div>
-   
 </div>
-  </div>
-    <div class="form-group">
-    <label for="json">Is Video Viewed full?</label>
-    <div class="checkbox">
-  <label>
-    <input type="checkbox" ng-model="viewers.fullView" >
-    Check if the video is viewed full
-  </label>
-</div>
-
-  </div>
-       <div class="form-group">
-    <label for="ontime">On Time</label>
-    <input type="text" class="form-control" name="on_time" placeholder="On Time" ng-pattern="/^[0-9]+([,.][0-9]+)?$/" ng-model="viewers.onTime" ng-required="!viewers.fullView">
-      <div class="has-error">
-             <span class="help-block" ng-if="addviewer.on_time.$error.pattern">Invalid video length</span>
-
+<div class="list-wrapper">
+    <div class="container">
+        <div class="col-md-4" ng-repeat="item in ipList | toArray">
+            <div class="cards">
+                <a href ng-click="removeIp(item.$key)" class="close">x</a>
+                <div class="card-head">
+                    <h3>{{item.$key}}<span>
+              <location data="{{ item.$key }}"></location>
+             </span></h3>
+                </div>
+                <div class="map">
+                    <showMap data="{{item.$key }}"></showMap>
+                </div>
+                <div class="engagement">
+                    <h4>Engagement</h4>
+                    <bars-chart chart-data="item"></bars-chart>
+                    <div></div>
+                </div>
+                <div class="card-foot">
+                    <showdate data="{{item[0].timestamp}}"></showdate>
+                </div>
+            </div>
         </div>
-  
-  </div>
-      </div>
-      <div class="modal-footer">
-       <div class="form-group">
- <div class="has-error" ng-if="addviewer.$invalid && addviewer.$dirty">
-  <span class="help-block">There seem to be some error in the form, please fix it</span>
-</div>     
-<button class="btn btn-primary" ng-disabled="addviewer.$invalid && addviewer.$dirty" ng-click="updateList(viewers)">Add Viewer</button>
-
-  </div>
-      </div>
-        </form>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+        <!--     </div>   -->
+    </div>
+    <div class="modal" style="display:block;" tabindex="-1" role="dialog" ng-show="ismodalTriggered">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" ng-click="closeModal()" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Add Ip</h4>
+                </div>
+                <div class="modal-body">
+                    <form name="addviewer" class="form">
+                        <div class="form-group">
+                            <label for="json">IP Address</label>
+                            <input type="text" class="form-control" name="ip_address" placeholder="IP Address" ng-pattern="/\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b/" ng-model="viewers.ip">
+                            <div class="has-error">
+                                <span class="help-block" ng-if="addviewer.ip_address.$error.pattern">Invalid IP Address</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="json">Full Length</label>
+                            <input type="text" class="form-control" name="full_length" placeholder="Full length of the movie, ex: 7.10" ng-model="viewers.fullLength" ng-pattern="/^[0-9]+([,.][0-9]+)?$/" ng-required="true">
+                            <div class="has-error">
+                                <span class="help-block" ng-if="addviewer.full_length.$error.pattern">Invalid video length</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="json">Seek</label>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" name="skip_start" placeholder="Start Time ex: 5.10" ng-model="viewers.skipStart" ng-pattern="/^[0-9]+([,.][0-9]+)?$/" ng-required="true">
+                                    <div class="has-error">
+                                        <span class="help-block" ng-if="addviewer.skip_start.$error.pattern">Invalid video length</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" name="skip_end" placeholder="End Time ex: 6.10" ng-model="viewers.skipEnd" ng-pattern="/^[0-9]+([,.][0-9]+)?$/" ng-required="true">
+                                    <div class="has-error">
+                                        <span class="help-block" ng-if="addviewer.skip_end.$error.pattern">Invalid video length</span>
+                                        <span class="help-block" ng-if="addviewer.skip_end.$viewValue < addviewer.skip_start.$viewValue">end time cannot be smaller than start time</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="json">Is Video Viewed full?</label>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" ng-model="viewers.fullView"> Check if the video is viewed full
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="ontime">On Time</label>
+                            <input type="text" class="form-control" name="on_time" placeholder="On Time" ng-pattern="/^[0-9]+([,.][0-9]+)?$/" ng-model="viewers.onTime" ng-required="!viewers.fullView">
+                            <div class="has-error">
+                                <span class="help-block" ng-if="addviewer.on_time.$error.pattern">Invalid video length</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="form-group">
+                        <div class="has-error" ng-if="addviewer.$invalid && addviewer.$dirty">
+                            <span class="help-block">There seem to be some error in the form, please fix it</span>
+                        </div>
+                        <button class="btn btn-primary" ng-disabled="addviewer.$invalid && addviewer.$dirty" ng-click="updateList(viewers)">Add Viewer</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->

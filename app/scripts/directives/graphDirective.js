@@ -25,13 +25,13 @@ angular.module('nickApp').directive('barsChart', function($parse) {
                 })
                 .attr("fill", function(d) {
                     var chartData = scope.data;
+                  
                     var toPercent = d3.scale.linear();
                     if (scope.data[0].full_length != 0) {
-                        console.log(scope.data[0].full_length);
                         toPercent.domain([0, scope.data[0].full_length])
                         toPercent.range([0, 300])
                     } else {
-                        return "gray";
+                        return "#d3d3d3";
                     }
                     if (scope.data[0].seek) {
                         var startSeek = toPercent(parseInt(scope.data[0].seek[0][0]));
@@ -50,7 +50,7 @@ angular.module('nickApp').directive('barsChart', function($parse) {
                         if (d > startTime && d < onTime) {
                             return "#53A93F";
                         } else {
-                            return "gray";
+                            return "#d3d3d3";
                         }
                     }
 

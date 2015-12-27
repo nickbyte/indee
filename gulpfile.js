@@ -174,8 +174,8 @@ gulp.task('client:build', ['html', 'styles'], function () {
 });
 
 gulp.task('html', function () {
-  return gulp.src(yeoman.app + '/views/**/*')
-    .pipe(gulp.dest(yeoman.dist + '/views'));
+  return gulp.src('app/views/**/*')
+    .pipe(gulp.dest('dist/views'));
 });
 
 gulp.task('images', function () {

@@ -8,11 +8,8 @@ angular.module('nickApp').directive('showmap', function($parse, $http) {
         },
         transclude: true,
         link: function(scope, element, attrs) {
-    
             var queryURL = 'http://freegeoip.net/json/' + attrs.data + '';
             $http.get(queryURL).then(function(response) {
-                //console.log(response.data);
-       
                 scope.center = {
                     lat: response.data.latitude,
                     lng: response.data.longitude,

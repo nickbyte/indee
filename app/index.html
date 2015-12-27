@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Indee App</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100,700' rel='stylesheet' type='text/css'>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -52,25 +53,27 @@
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/ngmap/build/scripts/ng-map.js"></script>
+ 
     <script src="bower_components/d3/d3.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
  <script src="bower_components/jquery-timepicker-jt/jquery.timepicker.min.js">
 </script>
- 
+ <script src="/bower_components/ngmap/build/scripts/ng-map.min.js"></script>
+  
     <script src="bower_components/ngstorage/ngStorage.min.js"></script>
-    <script src="http://maps.google.com/maps/api/js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/directives/graphDirective.js"></script>
+     <script src="scripts/filter/toArrayfilter.js"></script>
     <script type="text/javascript" src="scripts/directives/cityDirective.js"></script>
     <script type="text/javascript" src="scripts/directives/mapDirective.js"></script>
     <script type="text/javascript" src="scripts/directives/datetimeDirective.js"></script>
 <script src="bower_components/angular-jquery-timepicker/src/timepickerdirective.min.js"></script>
-    <!-- endbuild -->
+     <!-- endbuild -->
+      <script src="http://maps.google.com/maps/api/js"></script>
 </body>
 
 </html>

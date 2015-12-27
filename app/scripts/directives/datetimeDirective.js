@@ -8,8 +8,11 @@ angular.module('nickApp').directive('showdate', function($parse, $http) {
         },
         transclude: true,
         link: function(scope, element, attrs) {
-            //console.log( Date.parse(attrs.data));
-            scope.newdatetime = Date.parse(attrs.data);
+            if (Date.parse(attrs.data)) {
+                scope.newdatetime = Date.parse(attrs.data);
+            } else {
+                scope.newdatetime = attrs.data;
+            }
         },
         template: ["<p> {{newdatetime | date:'medium'}} </p>"].join("")
     };
