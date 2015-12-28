@@ -17,7 +17,7 @@ angular.module('nickApp').directive('showmap', function($parse, $http) {
                 }
             });
         },
-        template: ['<ng-map center="{{center.lat}},{{center.lng}}" zoom="10" id="map-me"></ng-map>'].join("")
+        template: ['<ng-map center="{{center.lat}},{{center.lng}}" zoom="10" id="map-me"><marker position="{{center.lat}},{{center.lng}}" title="Hello World!"></marker></ng-map>'].join("")
     };
     return map;
 });

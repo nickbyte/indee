@@ -21,6 +21,11 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
+        templateUrl: 'views/json.html',
+        controller: 'JsonCtrl',
+        controllerAs: 'JsonCtrl'
+      })
+      .when('/old', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
         controllerAs: 'main'

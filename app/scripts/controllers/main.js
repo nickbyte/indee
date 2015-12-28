@@ -8,8 +8,8 @@
  */
 angular.module('nickApp')
     .controller('MainCtrl', function($scope, $http, $localStorage) {
-        // process this array and send only what we need!
-        // what we need? timestamp full length, ipaddress with address info
+      
+        // assigning localstorage.
         $scope.$storage = $localStorage;
         //function to check if object is empty..
         $scope.isEmpty = function(obj) {
@@ -64,6 +64,7 @@ angular.module('nickApp')
                 $scope.setDummydata();
             };
         })
+        // check if local storage exists else set dummy data. 
         if ($scope.$storage.ipList) {
             $scope.ipList = $scope.$storage.ipList;
         } else {
@@ -75,24 +76,10 @@ angular.module('nickApp')
         $scope.closeModal = function() {
             $scope.ismodalTriggered = false;
         }
-        $scope.getTimestamp = function() {
-            var date = new Date()
-            var year = date.getFullYear();
-            var month = date.getUTCMonth();
-            var day = date.getUTCDay();
-            var h = date.getUTCHours();
-            var m = date.getMinutes();
-            var s = date.getSeconds();
-            var timestamp = year + '-' + month + "-" + day + " " + h + ":" + m + ":" + s + "";
-            console.log(timestamp);
-            return timestamp;
-        }
         $scope.updateList = function(viewers) {
-
             //lets make a nice timestamp
             var date = new Date()
             var timestamp = date.getTime();
-
             // Extract existing data and assign it to a variable;
             var tempstr = [{
                 "full_length": viewers.fullLength,
@@ -103,7 +90,6 @@ angular.module('nickApp')
                 "timestamp": timestamp,
                 "ontime": viewers.onTime
             }];
-            console.log(tempstr);
             $scope.ipList[viewers.ip] = tempstr;
             $scope.$storage.ipList = $scope.ipList;
             $scope.ismodalTriggered = false;

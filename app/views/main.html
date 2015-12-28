@@ -94,7 +94,7 @@
                         <div class="has-error" ng-if="addviewer.$invalid && addviewer.$dirty">
                             <span class="help-block">There seem to be some error in the form, please fix it</span>
                         </div>
-                        <button class="btn btn-primary" ng-disabled="addviewer.$invalid && addviewer.$dirty" ng-click="updateList(viewers)">Add Viewer</button>
+                        <button class="btn btn-primary" ng-disabled="addviewer.$invalid && addviewer.$dirty || addviewer.$pristine" ng-click="updateList(viewers)">Add Viewer</button>
                     </div>
                 </div>
                 </form>

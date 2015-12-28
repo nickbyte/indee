@@ -1,0 +1,64 @@
+<div class="intro-wrapper">
+    <div class="container">
+        <div class="col-md-12">
+            <h2>Pirate-proof your movies!</h2>
+            <p>Market your film. Dont leak it.</p>
+            <a ng-click="triggerModal()" class="btn btn-primary btn-large">Add Data Dump</a>
+        </div>
+    </div>
+</div>
+<div class="list-wrapper">
+    <div class="container">
+        <div class="col-md-4" ng-repeat="item in ipList | toArray">
+            <div class="cards">
+                <a href ng-click="removeIp(item.$key)" class="close">x</a>
+                <div class="card-head">
+                    <h3>{{item.$key}}<span>
+              <location data="{{ item.$key }}"></location>
+             </span></h3>
+                </div>
+                <div class="map">
+                    <showMap data="{{item.$key }}"></showMap>
+                </div>
+                <div class="engagement">
+                    <h4>Engagement</h4>
+                    <bars-chart chart-data="item"></bars-chart>
+                    <div></div>
+                </div>
+                <div class="card-foot">
+                    <showdate data="{{item[0].timestamp}}"></showdate>
+                </div>
+            </div>
+        </div>
+        <!--     </div>   -->
+    </div>
+    
+<div class="modal" style="display:block;" tabindex="-1" role="dialog" ng-show="ismodalTriggered">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" ng-click="closeModal()" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Add Ip</h4>
+                </div>
+                <div class="modal-body">
+                    <form name="addjson" class="form">
+                        <div class="form-group">
+                            <label for="json">Enter Json</label>
+                            <textarea name="json" ng-model="json" cols="30" rows="10"></textarea>
+               
+                            <div class="has-error">
+                                <span class="help-block" ng-if="invalidjson" >Please enter a valid Json</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="form-group">
+                        <button class="btn btn-primary" ng-disabled="addjson.$invalid && addjson.$dirty || addjson.$pristine" ng-click="updateList(json)">Add Viewer</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
